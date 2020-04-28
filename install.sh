@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 MAIN = '${PWD}/main.py'
 
