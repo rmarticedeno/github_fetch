@@ -3,4 +3,7 @@
 MAIN="${PWD}/main.py"
 
 pip3 install -r requirements.txt
-echo "*/5 * * * *  $MAIN" | crontab
+crontab -l > temp
+echo "*/5 * * * *  $MAIN" >> temp
+crontab temp
+rm temp
